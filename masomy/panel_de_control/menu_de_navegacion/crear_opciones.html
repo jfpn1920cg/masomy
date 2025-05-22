@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="crear_opciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script defer src="crear_opciones.js" defer></script>
+</head>
+<body>
+    <!----------------------------------->
+    <!--|estructura_menu_de_navegacion|-->
+    <!----------------------------------->
+    <header class="navbar">
+        <h1 class="titulo">Panel de control - Menú de navegación</h1>
+        <div class="perfil-container">
+            <i class="fas fa-user-circle perfil-icono" id="perfilIcono"></i>
+            <div class="menu-desplegable" id="menuPerfil">
+                <a href="#" id="cerrarSesion">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    <!--------------------------------->
+    <!--|estructura_menu_hamburguesa|-->
+    <!--------------------------------->
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i> Instrumentos
+    </div>
+    <div class="menu" id="menu">
+        <button class="item color1"><i class="fas fa-home"></i><span> Inicio</span></button>
+        <button class="item color2" onclick="window.location.href='/menu_de_navegacion/menu_de_navegacion_introducion.html'"><i class="fas fa-sitemap"></i><span> Menú de navegación</span></button>
+        <button class="item color3" onclick="window.location.href='/carrusel/carrsuel_introducion.html'"><i class="fas fa-images"></i><span> Carrusel</span></button>
+        <button class="item color4" onclick="window.location.href='/ofertas_o_descuentos/ofertas_o_descuentos_introducion.html'"><i class="fas fa-tags"></i><span> Ofertas o descuentos</span></button>
+        <button class="item color5" onclick="window.location.href='/categorias/categorias_introducion.html'"><i class="fas fa-th-list"></i><span> Categorías</span></button>
+        <button class="item color6" onclick="window.location.href='/proximos_contenido/proximos_contenido_introducion.html'"><i class="fas fa-calendar-alt"></i><span> Próximos contenido</span></button>
+        <button class="item color7" onclick="window.location.href='/chatbot/chatbot_introducion.html'"><i class="fas fa-robot"></i><span> Chatbot</span></button>
+        <button class="item color8" onclick="window.location.href='/pie_de_pagina/pie_de_pagina_introducion.html'"><i class="fas fa-shoe-prints"></i><span> Pie de página</span></button>
+        <button class="item color9" onclick="window.location.href='/usuarios/usuarios_introducion.html'"><i class="fas fa-users"></i><span> Usuarios</span></button>
+        <button class="item color10" onclick="window.location.href='/pedidos/pedidos_introducion.html'"><i class="fas fa-box"></i><span> Pedidos</span></button>
+        <button class="item color11" onclick="window.location.href='/productos_calificados/productos_calificados_introducion.html'"><i class="fas fa-star"></i><span> Productos calificados</span></button>
+        <button class="item color12" onclick="window.location.href='/configuración/configuración_introducion.html'"><i class="fas fa-cog"></i><span> Configuración</span></button>
+    </div>
+    <div class="contenedor_azul"></div>
+    <!--------------------------->
+    <!--|estructura_sin_nombre|-->
+    <!--------------------------->
+    <div class="contenedor">
+        <a href="crear_opciones.html" class="opcion">Crear opciones</a>
+        <div class="separador"></div>
+        <a href="contenido_de_opciones.html" class="opcion">Contenido de opciones</a>
+        <div class="separador"></div>
+        <a href="menu_eliminado.html" class="opcion">menu eliminado</a>
+        <div class="separador"></div>
+        <div class="opcion">guardar menu</div>
+    </div>
+    <hr class="linea-horizontal">
+    <!----------------------------------------->
+    <!--|estructura_crear_menu_de_navegacion|-->
+    <!----------------------------------------->
+    <div class="contenedor2">
+        <div class="menu2">
+            <div class="titulo2">Crear menú de navegación</div>
+            <div class="encabezado-obj2">
+                <span class="color">Lista de objetos</span>
+                <button class="btn-agregar2">+</button>
+            </div>
+            <div class="contenedor-tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Nombre del menu</th>
+                            <th>Aprobar</th>
+                            <th>Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="separador2"></div>
+    </div>
+    <!--------------------------------->
+    <!--|estructura_creando_opciones|-->
+    <!--------------------------------->
+    <div class="contenedor-menu2">
+        <div class="titulo3">creando opciones</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen o Icono</th>
+                    <th style="width: 50px;">N°</th>
+                    <th>Agregar las Opciones</th>
+                    <th>Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="1">
+                        <div>
+                            <button type="button" class="btn-icono3">+</button>
+                            <input type="file" class="input-icono" accept="image/*" style="display: none;">
+                            <img id="preview-icono" style="max-width: 50px; display: none; margin-top: 5px;">
+                            <input type="text" class="input-nombre-empresa2" placeholder="Nombre de la empresa">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="contenedor-numero">
+                            <div class="numero3">1</div>
+                            <div class="numero3">2</div>
+                            <div class="numero3">3</div>
+                            <div class="numero3">4</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="contenedor-opciones">
+                            <input type="text" class="input-opcion2" placeholder="Escribir opción 1">
+                            <input type="text" class="input-opcion2" placeholder="Escribir opción 2">
+                            <input type="text" class="input-opcion2" placeholder="Escribir opción 3">
+                            <input type="text" class="input-opcion2" placeholder="Escribir opción 3">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="contenedor-enlaces">
+                            <input type="text" class="input-enlace" placeholder="https://enlace1.com">
+                            <input type="text" class="input-enlace" placeholder="https://enlace2.com">
+                            <input type="text" class="input-enlace" placeholder="https://enlace3.com">
+                            <input type="text" class="input-enlace" placeholder="https://enlace4.com">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="contenedor-boton-guardar">
+            <button class="btn-guardar-opciones">Guardar opciones</button>
+        </div>
+    </div>
+    <hr class="linea-horizontal2">
+    <!---------------------------------------------->
+    <!--|estructura_menu_de_navegacion_eliminados|-->
+    <!---------------------------------------------->
+    <div class="contenedor-eliminados">
+        <div class="titulo-barra">🗑️ Menús eliminados</div>
+        <div class="tabla-scroll">
+            <table class="tabla-eliminados">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Menú eliminado</th>
+                        <th>Restablecer</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTablaEliminados">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="separador5"></div>
+    <!--------------------------------->
+    <!--|estructura_opciones_submenu|-->
+    <!--------------------------------->
+    <h3 class="titulosumenu">crear opciones submenu</h3>
+    <table class="tabla-submenu9">
+        <thead>
+            <tr>
+                <th>N°</th>
+                <th>Agregar Opción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><input type="text" placeholder="Opción 1"></td>
+                <td>
+                    <button class="icono-btn9">💾</button>
+                    <button class="icono-btn9 btn-toggle-submenu9">➕</button>
+                </td>
+            </tr>
+            <tr class="fila-submenu9" style="display: none;">
+                <td colspan="3">
+                    <table class="tabla-submenu-interna9">
+                        <h2>submenu</h2>
+                        <thead>
+                            <tr>
+                                <th>Agregar Opción</th>
+                                <th>Enlace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Opción 1">
+                                    <input type="text" placeholder="Opción 2">
+                                    <input type="text" placeholder="Opción 3">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Enlace 1">
+                                    <input type="text" placeholder="Enlace 2">
+                                    <input type="text" placeholder="Enlace 3">
+                                </td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="text" placeholder="Opción 2"></td>
+                <td>
+                    <button class="icono-btn9">💾</button>
+                    <button class="icono-btn9 btn-toggle-submenu9">➕</button>
+                </td>
+            </tr>
+            <tr class="fila-submenu9" style="display: none;">
+                <td colspan="3">
+                    <table class="tabla-submenu-interna9">
+                        <h2>submenu</h2>
+                        <thead>
+                            <tr>
+                                <th>Agregar Opción</th>
+                                <th>Enlace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Opción 1">
+                                    <input type="text" placeholder="Opción 2">
+                                    <input type="text" placeholder="Opción 3">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Enlace 1">
+                                    <input type="text" placeholder="Enlace 2">
+                                    <input type="text" placeholder="Enlace 3">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><input type="text" placeholder="Opción 3"></td>
+                <td>
+                    <button class="icono-btn9">💾</button>
+                    <button class="icono-btn9 btn-toggle-submenu9">➕</button>
+                </td>
+            </tr>
+            <tr class="fila-submenu9" style="display: none;">
+                <td colspan="3">
+                    <table class="tabla-submenu-interna9">
+                        <h2>submenu</h2>
+                        <thead>
+                            <tr>
+                                <th>Agregar Opción</th>
+                                <th>Enlace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Opción 1">
+                                    <input type="text" placeholder="Opción 2">
+                                    <input type="text" placeholder="Opción 3">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Enlace 1">
+                                    <input type="text" placeholder="Enlace 2">
+                                    <input type="text" placeholder="Enlace 3">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><input type="text" placeholder="Opción 4"></td>
+                <td>
+                    <button class="icono-btn9">💾</button>
+                    <button class="icono-btn9 btn-toggle-submenu9">➕</button>
+                </td>
+            </tr>
+            <tr class="fila-submenu9" style="display: none;">
+                <td colspan="3">
+                    <table class="tabla-submenu-interna9">
+                        <h2>submenu</h2>
+                        <thead>
+                            <tr>
+                                <th>Agregar Opción</th>
+                                <th>Enlace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Opción 1">
+                                    <input type="text" placeholder="Opción 2">
+                                    <input type="text" placeholder="Opción 3">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Enlace 1">
+                                    <input type="text" placeholder="Enlace 2">
+                                    <input type="text" placeholder="Enlace 3">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr class="linea-horizontal3">
+    <!---------------------------------------------->
+    <!--|estructura_despliegue_menu_de_navegacion|-->
+    <!---------------------------------------------->
+    <table class="menu-navegacion">
+        <thead>
+            <tr>
+                <th class="titulo-tabla" colspan="3">despliegue menú de navegación</th>
+                <button class="eliminarmenudespegable">Eliminar</button>
+            </tr>
+            <tr>
+                <th>imagen o icono</th>
+                <th>nombre de la empresa</th>
+                <th colspan="3">opciones</th>
+            </tr>
+        </thead>
+        <tbody id="contenido-menu">
+            <tr>
+                <td><span class="icono">+</span></td>
+                <td><span class="nombre-empresa">Nombre de la Empresa</span></td>
+                <td>
+                    <button class="btn-opcion">Opción 1</button>
+                    <button class="btn-opcion">Opción 2</button>
+                    <button class="btn-opcion">Opción 3</button>
+                    <button class="btn-opcion">Opción 4</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

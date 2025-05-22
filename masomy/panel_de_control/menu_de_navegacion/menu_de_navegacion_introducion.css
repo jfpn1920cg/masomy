@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+/*-------------------------------*/
+/*--|estilo_menu_de_navegacion|--*/
+/*-------------------------------*/
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 1301px;
+    border-radius: 5px;
+}
+.titulo {
+    margin: 0;
+    font-size: 24px;
+}
+.perfil-container {
+    position: relative;
+    display: inline-block;
+}
+.perfil-icono {
+    font-size: 28px;
+    cursor: pointer;
+}
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    margin-top: 8px;
+    left: -92px;
+    top: 40px;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+.menu-desplegable a {
+    width: 100px;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+.menu-desplegable a:hover {
+    background-color: #f1f1f1;
+}
+/*-----------------------------*/
+/*--|estilo_menu_hamburguesa|--*/
+/*-----------------------------*/
+.hamburger {
+    font-size: 28px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    width: 251px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 7px;
+    margin-left: 5px;
+}  
+.contenedor_azul{
+    width: 292px;
+    margin-top: -720px;
+    margin-left: 5px;
+    height: 929px;
+    border-radius: 5px;
+    background-color: #007bff;
+}
+.menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    position: relative;
+    margin-top: 7px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 292px;
+    height: 700px;
+    z-index: 1000;
+}
+.menu.menu-visible {
+    transform: translateX(0);
+}
+.menu h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+.menu button.item {
+    all: unset;
+    cursor: pointer;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin: 5px 0;
+    height: 36.5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.menu button.item:hover {
+    transform: scale(1.02);
+}
+.item i {
+    font-size: 22px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+}
+.color1 { background-color: rgb(48, 132, 216); }
+.color2 { background-color: rgb(48, 132, 216); }
+.color3 { background-color: rgb(48, 132, 216); }
+.color4 { background-color: rgb(48, 132, 216); }
+.color5 { background-color: rgb(48, 132, 216); }
+.color6 { background-color: rgb(48, 132, 216); }
+.color7 { background-color: rgb(48, 132, 216); }
+.color8 { background-color: rgb(48, 132, 216); }
+.color9 { background-color: rgb(48, 132, 216); }
+.color10 { background-color: rgb(48, 132, 216); }
+.color11 { background-color: rgb(48, 132, 216); }
+.color12 { background-color: rgb(48, 132, 216); }
+/*-----------------------*/
+/*--|estilo_sin_nombre|--*/
+/*-----------------------*/
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 1047px;
+    margin-top: -988px;
+    margin-left: 300px;
+}
+.opcion {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width: 270px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+}
+a.opcion {
+    text-decoration: none; 
+    color: white; 
+}
+.separador {
+    width: 4px;
+    height: 50px;
+    background-color: black;
+    border-radius: 5px;
+}
+.linea-horizontal {
+    height: 2px;               
+    width: 1040px;             
+    border: 1px solid black;
+    background-color: black;
+    margin-left: 303px;
+    margin-top: 7px;
+    border-radius: 10px;
+}

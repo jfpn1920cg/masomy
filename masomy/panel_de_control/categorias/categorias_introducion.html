@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de control</title>
+    <link rel="stylesheet" href="categorias_introducion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script defer src="categorias_introducion.js" defer></script>    
+</head>
+<body>
+    <!----------------------------------->
+    <!--|estructura_menu_de_navegacion|-->
+    <!----------------------------------->
+    <header class="navbar">
+        <h1 class="titulo">Panel de control - categorias</h1>
+        <div class="perfil-container">
+            <i class="fas fa-user-circle perfil-icono" id="perfilIcono"></i>
+            <div class="menu-desplegable" id="menuPerfil">
+                <a href="#" id="cerrarSesion">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    <!--------------------------------->
+    <!--|estructura_menu_hamburguesa|-->
+    <!--------------------------------->
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i> Instrumentos
+    </div>
+    <div class="menu" id="menu">
+        <button class="item color1"><i class="fas fa-home"></i><span> Inicio</span></button>
+        <button class="item color2" onclick="window.location.href='/menu_de_navegacion/menu_de_navegacion_introducion.html'"><i class="fas fa-sitemap"></i><span> Menú de navegación</span></button>
+        <button class="item color3" onclick="window.location.href='/carrusel/carrsuel_introducion.html'"><i class="fas fa-images"></i><span> Carrusel</span></button>
+        <button class="item color4" onclick="window.location.href='/ofertas_o_descuentos/ofertas_o_descuentos_introducion.html'"><i class="fas fa-tags"></i><span> Ofertas o descuentos</span></button>
+        <button class="item color5" onclick="window.location.href='/categorias/categorias_introducion.html'"><i class="fas fa-th-list"></i><span> Categorías</span></button>
+        <button class="item color6" onclick="window.location.href='/proximos_contenido/proximos_contenido_introducion.html'"><i class="fas fa-calendar-alt"></i><span> Próximos contenido</span></button>
+        <button class="item color7" onclick="window.location.href='/chatbot/chatbot_introducion.html'"><i class="fas fa-robot"></i><span> Chatbot</span></button>
+        <button class="item color8" onclick="window.location.href='/pie_de_pagina/pie_de_pagina_introducion.html'"><i class="fas fa-shoe-prints"></i><span> Pie de página</span></button>
+        <button class="item color9" onclick="window.location.href='/usuarios/usuarios_introducion.html'"><i class="fas fa-users"></i><span> Usuarios</span></button>
+        <button class="item color10" onclick="window.location.href='/pedidos/pedidos_introducion.html'"><i class="fas fa-box"></i><span> Pedidos</span></button>
+        <button class="item color11" onclick="window.location.href='/productos_calificados/productos_calificados_introducion.html'"><i class="fas fa-star"></i><span> Productos calificados</span></button>
+        <button class="item color12" onclick="window.location.href='/configuración/configuración_introducion.html'"><i class="fas fa-cog"></i><span> Configuración</span></button>
+    </div>
+    <div class="contenedor_azul"></div>
+</body>
+</html>
